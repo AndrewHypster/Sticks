@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(57, 59, 60);
+  display: flex;
+}
+
+wrapper {
+  width: 100vw;
+  display: grid;
+}
+
+/* ---------- СТАРТ ---------- */
+#start {
+  width: 30rem;
+  height: 15rem;
+  position: absolute;
+  align-self: center;
+  left: 25%;
+  background: rgb(125, 210, 64);
+  border-radius: 1rem;
+  display: grid;
+}
+
+.title {
+  margin: auto;
+}
+
+.form {
+  display: grid;
+  align-content: center;
+}
+
+.checkbox {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+}
+
+.start-btn {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background: #425770;
+}
+
+/* ---------- ГРА ---------- */
+#game {
+  /* width: 100vw; */
+  width: fit-content;
+  /* height: 100vh; */
+  /* position: fixed; */
+  padding: 2rem;
+  /* padding: 20vh 25vw; */
+  margin: auto;
+  /* z-index: 1; */
+  background: rgb(57, 59, 60);
+  /* display: none; */
+  display: block;
+}
+
+#game:target {
+  display: block;
+}
+
+.sticks {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.stick {
+  width: 8px;
+  height: 100px;
+  margin: 8px;
+  background: rgb(216, 143, 54);
+}
+
+.take {
+  display: flex;
+}
+
+.take h1 {
+  margin: 0 5px;
+  padding: 5px 15px;
+  background: #577042;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stop-take {
+  pointer-events: none;
+}
+
+p {
+  width: fit-content;
+  margin: auto;
+}
+
+.restart {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #424f70;
+  cursor: pointer;
+}

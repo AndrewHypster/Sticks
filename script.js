@@ -33,13 +33,16 @@ take.onclick = e => { // віднімає патички та малює
 
 let firstSmall = true
 function compGo (oponent) {
-  if (firstSmall & oponent !== 3 & sticksNumb !== 0) {
+  if (firstSmall & oponent !== 3 & sticksNumb >= 5) {
     sticksNumb -= 3 - oponent
     computer.innerHTML = +computer.innerHTML + (3 - oponent) // додаємо рахунок
     firstSmall = false
-  } else if (sticksNumb !== 0) {
+  } else if (sticksNumb >= 5) {
     sticksNumb -= 4 - oponent
     computer.innerHTML = +computer.innerHTML + (4 - oponent) // додаємо рахунок
+  } else {
+    sticksNumb -= -(1 - sticksNumb)
+    computer.innerHTML = +computer.innerHTML + (-(1 - sticksNumb)) // додаємо рахунок
   }
   paint()
 }
